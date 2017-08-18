@@ -1,5 +1,5 @@
 <?php
-	//keyword大小写不敏感，变量大小写敏感
+	//keyword、函数名大小写不敏感，变量大小写敏感
 	echo "fff";
 	$X = 12;
 	Echo $X;
@@ -33,6 +33,16 @@
 
 	//strlen() 函数返回字符串的长度
 	echo strlen("Hello world!");
+
+	//count() 函数用于返回数组的长度（元素数）
+	echo count($cars);
+
+	//关联数组是使用您分配给数组的指定键的数组
+	$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+	foreach($age as $x=>$x_value) {
+		echo "Key=" . $x . ", Value=" . $x_value;
+		echo "<br>";
+	}
 	//strpos() 函数用于检索字符串内指定的字符或文本。如果找到匹配，则会返回首个匹配的字符位置。如果未找到匹配，则将返回 FALSE。
 	echo strpos("Hello world!","world");
 	//.  、  .= 串接值
@@ -44,6 +54,13 @@
 	$x .= " world!";
 	echo $x; // 输出 Hello world!
 
+	echo $_SERVER['SERVER_SOFTWARE'];
+
+	$fname = $_POST['fastname'];
+	$lname = $_POST["lastname"];
+	echo $fname . " " . $lname;
 	//xor异或
 	//数组+，为联合，两个数组合并
+	//
+	echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
 ?>
