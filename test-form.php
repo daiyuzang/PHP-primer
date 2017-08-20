@@ -83,6 +83,7 @@
 		echo $comment;
 		echo "<br>";
 		echo $gender;
+		
 		include "test.php";
 		echo date("Y-m-d h:i:sa",$d);
 	?>
