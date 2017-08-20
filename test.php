@@ -23,4 +23,6 @@
 	echo fread($myfile, filesize("webdictionary.txt"));
 	//所以不会出现两行第一排！！！！
 	fclose($myfile);
+	//feof() 函数检查是否已到达 "end-of-file" (EOF)
+	//fgetc() 函数用于从文件中读取单个字符，文件指针会移动到下一个字符。
 ?>
