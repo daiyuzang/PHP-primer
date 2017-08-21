@@ -25,4 +25,12 @@
 	fclose($myfile);
 	//feof() 函数检查是否已到达 "end-of-file" (EOF)
 	//fgetc() 函数用于从文件中读取单个字符，文件指针会移动到下一个字符。
+	//fopen() 打开并不存在的文件，此函数会创建文件
+	$newfile = fopen("testfile.txt","w") or die("Unable to open");
+	$txt = "Mickey Mouse\n";
+	fwrite($newfile, $txt);
+	$txt = "Minnie Mouse\n";
+	fwrite($newfile, $txt);
+	echo readfile("testfile.txt");
+	fclose($newfile);
 ?>
