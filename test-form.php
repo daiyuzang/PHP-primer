@@ -88,6 +88,5 @@
 		echo date("Y-m-d h:i:sa",$d);
 	?>
 	<a href="test.php?subject=PHP&web=W3school.com.cn">测试GET</a>
-
 </body>
 </html>
