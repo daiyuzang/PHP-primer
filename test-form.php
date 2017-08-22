@@ -76,7 +76,7 @@
 		echo "<h2>您的输入：</h2>";
 		echo $name;
 		echo "<br>";
-		echo $email;
+		echo "$email" == $email;
 		echo "<br>";
 		echo $website;
 		echo "<br>";
