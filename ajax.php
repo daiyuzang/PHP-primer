@@ -50,6 +50,6 @@
 	}else{
 		$response = $hint;
 	}
-	echo "$response";
+	print "$response";
 
 ?>

@@ -47,6 +47,7 @@
 		function stateChange(){
 			if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
 				document.getElementById("txtHint").innerHTML = xmlHttp.responseText;
+				console.log(xmlHttp.responseText);
 			}
 		}
 
