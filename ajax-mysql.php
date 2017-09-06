@@ -8,8 +8,8 @@
 		<select name="users" onchange="showUser(this.value)">
 			<option value="1">Peter Griffin</option>
 			<option value="2">Lois Griffin</option>
-			<option value="3">Glenn Quagmire</option>
-			<option value="4">Joseph Swanson</option>
+			<option value="4">Glenn Quagmire</option>
+			<option value="3">Joseph Swanson</option>
 		</select>
 	</form>
 	<div id="txtHint">Users info will be list here.</div>
@@ -21,7 +21,7 @@
 				alert("Browser dosen't support Http Request!");
 				return;
 			}
-			var url = "";
+			var url = "getuser.php";
 			url = url + "?q=" + str;
 			url = url + "&sid=" + Math.random();
 			xmlHttp.onreadystatechange = stateChange;
