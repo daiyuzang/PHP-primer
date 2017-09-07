@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>xml</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str = "<?xml version='1.0' encoding='ISO-8859-1'?><person><firstname>Lois</firstname><lastname>Griffin</lastname><age>40</age><hometown>Newport</hometown><job>Piano Teac</job></person>";
+		console.log(str);
+		function createXml(str){
+			if (document.all) {
+				var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+				xmlDoc.loadXML(str);
+				return xmlDoc;
+			}else{
+				var xmlDoc = new DOMParser();
+				return xmlDoc.parseFromString(str,"text/xml");
+			}
+		}
+		console.log(createXml(str));
+	</script>
+</body>
+</html>
